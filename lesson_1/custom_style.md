@@ -4,8 +4,10 @@
 1. 在 css 資料夾下創造 style.css 檔案
 ![](img/style.css.png)
 (輸入 css 後按下 “/” 即可)
-2. 還記得之前學過的 "選擇器" (selector) 嗎？
-試著為特定的標籤設定不同的外觀吧！
+2. 在網頁的 `head` 標籤中間插入下面這一行：
+`<link rel="stylesheet" type="text/css" href="css/style.css" />`
+代表要引入路徑為 "css/style.css" 的 css 檔案
+3. 還記得之前學過的 "選擇器" (selector) 嗎？在 style.css 檔案中試著為特定的標籤設定不同的外觀吧！
 
 > ###參考資料：
 > * W3C school: http://www.w3schools.com/css/

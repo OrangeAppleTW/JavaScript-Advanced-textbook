@@ -1,4 +1,4 @@
-# Before we start
+# 前置作業
 
 在開始之前，我們得來複習一下 Github 的使用
 
@@ -30,12 +30,3 @@
 > ### 小提示:
 > 如果沒有看到，請確認是否已經在 Github 上進行 Email 認證了
 
-
-## 是做時間 - 修改網頁
-
-1. Please give your webpage a nice sructure using html, head, body tag. And use title, h1, h2, p to present some proper info in your webpage.
-2. Please set some `<a>` tags link to your projects.
-
-> ### 小提示:
-> 請使用 Chrome 瀏覽器，並安裝這個套件，才不會發生程式修改了，瀏覽器卻沒有接受到的情形噢：
-https://chrome.google.com/webstore/detail/cache-killer/jpfbieopdmepaolggioebjmedmclkbap/reviews
