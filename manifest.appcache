@@ -1,11 +1,13 @@
 CACHE MANIFEST
-# Revision 1457729342637
+# Revision 1457773245762
 
 CACHE:
+lesson_1/&.html
 index.html
 lesson_1/README.html
 lesson_1/appendix.html
 lesson_1/before_we_start.html
+lesson_1/create_project_page_on_github.html
 lesson_1/custom_style.html
 lesson_1/include_images.html
 lesson_1/personal_webpage.html
