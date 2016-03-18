@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1457773245762
+# Revision 1458325667372
 
 CACHE:
 lesson_1/&.html
@@ -12,7 +12,10 @@ lesson_1/custom_style.html
 lesson_1/include_images.html
 lesson_1/personal_webpage.html
 lesson_2/README.html
+lesson_2/bootstrap.html
+lesson_2/favicon.html
 lesson_2/framework.html
+lesson_2/navbar.html
 gitbook/app.js
 gitbook/fonts/fontawesome/FontAwesome.otf
 gitbook/fonts/fontawesome/fontawesome-webfont.eot
