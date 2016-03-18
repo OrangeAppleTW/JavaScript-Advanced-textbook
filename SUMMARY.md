@@ -10,4 +10,7 @@
        * [create project page on github](lesson_1/create_project_page_on_github.md)
 * [認識介面 (UI, User Interface)](lesson_2/README.md)
    * [Framework](lesson_2/framework.md)
+   * [Bootstrap Grid System](lesson_2/bootstrap.md)
+   * [Navbar](lesson_2/navbar.md)
+   * [為你的網站加上 favicon](lesson_2/favicon.md)
 
