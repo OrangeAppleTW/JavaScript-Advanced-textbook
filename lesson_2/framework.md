@@ -8,7 +8,7 @@
 > “使用框架來寫程式” 就代表：你將別人寫到一半的程式拿來繼續下去。
 
 
-## HTML介面框架
+## 各種程式的框架
 而程式有份非常多種，因此也當然有不同用途的框架了。  例如：
 
 * 網站：Ruby on Rails, Django, Express
@@ -26,5 +26,6 @@
 `<link href="css/bootstrap.css" rel="stylesheet">`
 4. 在網頁中隨意加入一個連接，例如： `<a href="...">我的臉書頁面</a>`。看看他長什麼樣子。
 5. 接著在剛剛的連結中的 class 加入 `btn btn-primary`，再觀察一下發生了什麼事。
+![](img/btn_class.png)
 
 > Bootstrap 按鈕樣式：http://getbootstrap.com/css/#buttons
