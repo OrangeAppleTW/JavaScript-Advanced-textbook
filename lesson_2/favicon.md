@@ -8,7 +8,7 @@
 
 要在網站上加入 favicon 非常簡單，只要在`<head>`中加入這行：
 ```html
-<link rel="shortcut icon" href="https://orangeapple.co/assets/favicon-ad7f6f749750e6499de770fdc02b5f2453ce870dbfbc0e31c90ba7b7dc454828.png" type="image/x-icon" />
+<link rel="shortcut icon" href="https://orangeapple.co/favicon.png" type="image/x-icon" />
 ```
 請注意，`href`放的是你的favicon的位置喔！
 現在試著加入這行，看看有什麼改變吧！
