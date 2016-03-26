@@ -17,7 +17,7 @@
     <div class="col-md-4"></div> <!-- 這欄佔4格寬 -->
     <div class="col-md-6"></div> <!-- 這欄佔6格寬 -->
     <div class="col-md-2"></div> <!-- 這欄佔2格寬 -->
-  <div>
+  </div>
 </div>
 ```
 
