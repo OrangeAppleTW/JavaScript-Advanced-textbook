@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Dropdown Menu | 歡迎來到 JavaScript 軟體實戰班！</title>
+        <title>認識 ForerunnerDB | 歡迎來到 JavaScript 軟體實戰班！</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="OrangeAppleTW">
     
     
-    <link rel="next" href="../ui_components/modal.html" />
+    <link rel="next" href="../database_-_part_1/crud_-_create.html" />
     
     
-    <link rel="prev" href="../ui_components/README.html" />
+    <link rel="prev" href="../database_-_part_1/README.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="OrangeAppleTW/JavaScript-Advanced-textbook" data-level="3.1" data-basepath=".." data-revision="1460137160058">
+    <div class="book" data-github="OrangeAppleTW/JavaScript-Advanced-textbook" data-level="4.1" data-basepath=".." data-revision="1460137160058">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook/edit/master/ui_components/dropdown_menu.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook/edit/master/database_-_part_1/forerunnerdb.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -366,7 +366,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 71.42857142857143%;min-width: 66.66666666666667%;"></div>
+        <div class="inner" style="width: 90.47619047619048%;min-width: 85.71428571428571%;"></div>
     </div>
     <div class="chapters">
     
@@ -402,13 +402,13 @@
     
         <a href="../ui_components/dropdown_menu.html" title="Dropdown Menu" class="chapter done " data-progress="3.1" style="left: 71.42857142857143%;"></a>
     
-        <a href="../ui_components/modal.html" title="Modal" class="chapter  " data-progress="3.2" style="left: 76.19047619047619%;"></a>
+        <a href="../ui_components/modal.html" title="Modal" class="chapter done " data-progress="3.2" style="left: 76.19047619047619%;"></a>
     
-        <a href="../ui_components/rwd.html" title="RWD 自適應網頁設計" class="chapter  " data-progress="3.3" style="left: 80.95238095238095%;"></a>
+        <a href="../ui_components/rwd.html" title="RWD 自適應網頁設計" class="chapter done " data-progress="3.3" style="left: 80.95238095238095%;"></a>
     
-        <a href="../database_-_part_1/README.html" title="認識資料庫 Database - part 1" class="chapter  new-chapter" data-progress="4" style="left: 85.71428571428571%;"></a>
+        <a href="../database_-_part_1/README.html" title="認識資料庫 Database - part 1" class="chapter done new-chapter" data-progress="4" style="left: 85.71428571428571%;"></a>
     
-        <a href="../database_-_part_1/forerunnerdb.html" title="認識 ForerunnerDB" class="chapter  " data-progress="4.1" style="left: 90.47619047619048%;"></a>
+        <a href="../database_-_part_1/forerunnerdb.html" title="認識 ForerunnerDB" class="chapter done " data-progress="4.1" style="left: 90.47619047619048%;"></a>
     
         <a href="../database_-_part_1/crud_-_create.html" title="CRUD - Create &amp; Read" class="chapter  " data-progress="4.2" style="left: 95.23809523809524%;"></a>
     
@@ -419,57 +419,50 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_5068">
+                    <section class="normal" id="section-gitbook_5052">
                     
-                        <h1 id="-">下拉式選單</h1>
-<p>很多網頁的導覽列上都有連結以及下拉選單，而 Bootstrap 也有提供「下拉選單」的元件。</p>
-<p><img src="img/fb-dropdown.jpg" alt=""></p>
-<h2 id="-">加入連結</h2>
-<p>我們先試著在 <code>&lt;nav&gt;</code> 中加入以下程式碼：</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav navbar-nav navbar-right"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>連結<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-</code></pre>
-<p>這時你應該會看到導覽列右方出現了一個連結按鈕，這樣就完成導覽列的控制區塊，並且加上一個連結了！</p>
+                        <h1 id="-forerunnerdb">認識 ForerunnerDB</h1>
+<p>ForerunnerDB 是一個 JavaScript 寫成的資料庫。  並支援持久儲存功能，以及基本的搜尋功能。</p>
 <blockquote>
-<h3 id="-">小提示：</h3>
-<p>試著更改連結的位置，連到別的網頁去吧！</p>
+<p>官方網站：<a href="http://forerunnerdb.com/" target="_blank">http://forerunnerdb.com/</a></p>
 </blockquote>
-<h2 id="-">加入下拉式選單</h2>
-<p>現在我們已經在導覽列加入一個控制區塊了，現在我們要在裡面再加上一個 下拉式選單。
-現在在剛剛的 <code>&lt;ul&gt;</code> 中加入以下程式碼 (在<code>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;連結&lt;/a&gt;&lt;/li&gt;</code>的下方或上方)：</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span>&gt;</span>Dropdown <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"separator"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
-</code></pre>
-<blockquote>
-<h3 id="-">注意：</h3>
-<p>以上程式碼中，class 為 <code>dropdown-menu</code> 的區塊就是點下後會出現的下拉列表了，你會注意到：<strong><em>這個列表是沒有顯示出來的</em></strong>，那是因為在 bootstrap.css 中將他設定成隱藏的關係。</p>
-</blockquote>
-<p>此時，你會看到我們多了一個按鈕，但是點下後卻沒有任何反應！
-原來是因為 Bootstrap 需要依賴 JavaScript 來控制 下拉式選單的出現。而這些 JavaScript 程式碼都是寫在 bootstrap.js 中，必須將這個函式庫引入後，才能使用這些功能。</p>
-<p>而 bootstrap.js 又依賴於 jquery.js 這個非常有名的函式庫，才能正常運作，所以我們現在要將兩個函式庫上傳，並在網頁中引入它們：</p>
+<p><br></p>
+<h2 id="-">開始吧</h2>
 <ol>
-<li>下載函式庫<ul>
-<li><a href="https://code.jquery.com/jquery-1.12.2.min.js" target="_blank">https://code.jquery.com/jquery-1.12.2.min.js</a></li>
-<li><a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" target="_blank">https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js</a></li>
-</ul>
-</li>
-<li>上傳函式庫到 js 資料夾</li>
-<li>在 index.html 的 body 區塊的尾端引入兩個函式庫<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"函式庫的路徑"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-</code></pre>
-</li>
+<li>創造一個新頁面 (隨便叫什麼名字，但必須是 <code>.html</code> 結尾)</li>
+<li>上傳 ForerunnerDB (<a href="js/fdb-all.min.js">下載位置</a>)</li>
+<li>在頁面中載入 ForerunnerDB 函式庫</li>
 </ol>
 <blockquote>
-<h3 id="-">請注意!</h3>
-<p>因為 bootstrap.js 依賴 jquery.js，因此在網頁中必須先引入 jquery，再引入 bootstrap</p>
+<h3 id="-">找找看</h3>
+<p>這個新網頁的網址在哪呢？</p>
+</blockquote>
+<p><br></p>
+<h2 id="-">創造資料庫</h2>
+<p>在 HTML 中，其實可以直接寫 JavaScript (但是在程式碼很多的時候，這不是一個好選擇)。</p>
+<p>在<code>&lt;body&gt;</code>的尾巴(載入函式庫以後)，創造一個 <code>&lt;script&gt;</code> 區塊：</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-comment">// ...程式寫在這裡</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<h3 id="-database-">創造第一個資料庫 (Database):</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> fdb = <span class="hljs-keyword">new</span> ForerunnerDB();
+<span class="hljs-keyword">var</span> db = fdb.db(<span class="hljs-string">"你的資料庫名稱"</span>);
+</code></pre>
+<p>這時，db變數中就裝有一個小小的資料庫啦！</p>
+<p><br></p>
+<h2 id="-collection-table-">創造 collection (Table)</h2>
+<p>在 Forerunner 中，一群相同類型的資料被放在 <strong><em>collection(集合)</em></strong> 中，其實就相當於 <strong><em>資料表(Table)</em></strong> 的概念啦。現在，讓我們創建第一個 Collection 吧！</p>
+<pre><code class="lang-javascript">studentCollection = db.collection(<span class="hljs-string">'students'</span>);
+</code></pre>
+<p>這時候，studentCollection 就代表了 db 這個資料庫中的一個資料表啦，顧名思義，裡面裝的當然就是學生資料囉！</p>
+<p><br></p>
+<blockquote>
+<h3 id="-">小提醒</h3>
+<p>雖然 Forerunner 具有資料庫的一些基礎功能，
+但他嚴格講起來不是一個正規的資料庫，
+這邊是為了讓學生能用較輕量、簡單的方式學習資料庫的觀念，
+因而選用 Forerunner</p>
 </blockquote>
 
                     
@@ -480,10 +473,10 @@
         </div>
 
         
-        <a href="../ui_components/README.html" class="navigation navigation-prev " aria-label="Previous page: UI Components"><i class="fa fa-angle-left"></i></a>
+        <a href="../database_-_part_1/README.html" class="navigation navigation-prev " aria-label="Previous page: 認識資料庫 Database - part 1"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../ui_components/modal.html" class="navigation navigation-next " aria-label="Next page: Modal"><i class="fa fa-angle-right"></i></a>
+        <a href="../database_-_part_1/crud_-_create.html" class="navigation navigation-next " aria-label="Next page: CRUD - Create &amp; Read"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

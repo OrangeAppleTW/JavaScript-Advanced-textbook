@@ -1,8 +1,12 @@
 CACHE MANIFEST
-# Revision 1458919730613
+# Revision 1460137160062
 
 CACHE:
 index.html
+database_-_part_1/README.html
+database_-_part_1/crud_-_create.html
+database_-_part_1/crud_-_read.html
+database_-_part_1/forerunnerdb.html
 lesson_1/&.html
 lesson_1/README.html
 lesson_1/appendix.html
