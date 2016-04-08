@@ -17,4 +17,8 @@
    * [Dropdown Menu](ui_components/dropdown_menu.md)
    * [Modal](ui_components/modal.md)
    * [RWD 自適應網頁設計](ui_components/rwd.md)
+* [認識資料庫 Database - part 1](database_-_part_1/README.md)
+   * [認識 ForerunnerDB](database_-_part_1/forerunnerdb.md)
+   * [CRUD - Create & Read](database_-_part_1/crud_-_create.md)
+   * [自動產生假資料](database_-_part_1/crud_-_read.md)
 
