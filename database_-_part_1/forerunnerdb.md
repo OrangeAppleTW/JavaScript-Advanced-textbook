@@ -42,7 +42,7 @@ var db = fdb.db("你的資料庫名稱");
 在 Forerunner 中，一群相同類型的資料被放在 ***collection(集合)*** 中，其實就相當於 ***資料表(Table)*** 的概念啦。現在，讓我們創建第一個 Collection 吧！
 
 ```javascript
-studentCollection = db.collection('students');
+var studentCollection = db.collection('students');
 ```
 
 這時候，studentCollection 就代表了 db 這個資料庫中的一個資料表啦，顧名思義，裡面裝的當然就是學生資料囉！

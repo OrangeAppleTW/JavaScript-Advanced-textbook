@@ -1,4 +1,4 @@
-# CRUD - Create
+# CRUD 資料庫的基本操作
 
 ***CRUD*** 是設計資料系統時很重要的基本技巧，也有人叫他「增刪改查」，分表代表了：
 
@@ -62,10 +62,10 @@ studentCollection.save();
 現在，加上幾筆資料，並且儲存他們後，刷新頁面看看吧！
 
 ###結果還是沒資料？
-原來 Forerunner 設計的機制是：如果要使用之前儲存的資料，必須執行另一個函式 ` `load`:
+原來 Forerunner 設計的機制是：如果要使用之前儲存的資料，必須執行另一個函式 `load`:
 
 ```javascript
-studentCollection.laod();
+studentCollection.lood();
 ```
 執行一次上面這行程式碼，用 `find` 指令看看資料有沒有跑出來吧！
 
