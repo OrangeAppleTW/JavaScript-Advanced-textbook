@@ -1,12 +1,11 @@
 CACHE MANIFEST
-# Revision 1460257919645
+# Revision 1460772760609
 
 CACHE:
-index.html
-database_-_part_1/README.html
-database_-_part_1/crud_-_create.html
-database_-_part_1/crud_-_read.html
-database_-_part_1/forerunnerdb.html
+lesson_3/dropdown_menu.html
+lesson_3/README.html
+lesson_3/modal.html
+lesson_3/rwd.html
 lesson_1/&.html
 lesson_1/README.html
 lesson_1/appendix.html
@@ -20,10 +19,16 @@ lesson_2/bootstrap.html
 lesson_2/favicon.html
 lesson_2/framework.html
 lesson_2/navbar.html
-ui_components/README.html
-ui_components/dropdown_menu.html
-ui_components/modal.html
-ui_components/rwd.html
+index.html
+lesson_4/README.html
+lesson_4/crud_-_create.html
+lesson_4/crud_-_read.html
+lesson_4/forerunnerdb.html
+lesson_5/README.html
+lesson_5/inspect_data.html
+lesson_5/table.html
+lesson_6/README.html
+lesson_6/update.html
 gitbook/app.js
 gitbook/fonts/fontawesome/FontAwesome.otf
 gitbook/fonts/fontawesome/fontawesome-webfont.eot
