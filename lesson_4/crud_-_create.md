@@ -65,7 +65,7 @@ studentCollection.save();
 原來 Forerunner 設計的機制是：如果要使用之前儲存的資料，必須執行另一個函式 `load`:
 
 ```javascript
-studentCollection.lood();
+studentCollection.load();
 ```
 執行一次上面這行程式碼，用 `find` 指令看看資料有沒有跑出來吧！
 

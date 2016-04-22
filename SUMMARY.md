@@ -26,6 +26,7 @@
    * [檢視學生資料](lesson_5/inspect_data.md)
 * [更新 & 刪除](lesson_6/README.md)
    * [更新學生資料](lesson_6/update.md)
+   * [刪除學生資料](lesson_6/delete_data.md)
 * [查詢、更新、刪除多筆資料](lesson_7/README.md)
 * [特別的搜尋方法](lesson_8/README.md)
 * [多個資料表的延伸應用](lesson_9/README.md)

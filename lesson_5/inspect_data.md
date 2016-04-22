@@ -32,5 +32,9 @@ result = DB.collection("students").find(query);
 ## 小挑戰 - 點選學生顯示詳細資料
 請試著結合 Bootstrap 的 Modal 功能：
 
-* 當點擊學生名字或id時，從資料庫中抓出這筆學生的資料
+* 當點擊學生的 id 時，從資料庫中抓出這筆學生的資料
 * 接著彈出 Modal ，將資料顯示出來！
+
+> ###小提示
+> * 綁定點擊事件： [$.click()](https://api.jquery.com/click/)
+> * 取得DOM物件的文字內容： [$.text()](https://api.jquery.com/text/)
