@@ -22,3 +22,4 @@ DB.collection("students").updateById("1",newData);
 * 使用者在修改資料以後，點選「送出」按鈕，便會照剛剛的資料進行修改
 
 ![範例](img/feature-buttons.png)
+![範例](img/edit-modal.png)
