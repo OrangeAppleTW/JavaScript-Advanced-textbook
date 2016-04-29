@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>更新 &amp; 刪除 | 歡迎來到 JavaScript 軟體實戰班！</title>
+        <title>更新學生資料 | 歡迎來到 JavaScript 軟體實戰班！</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,7 +19,7 @@
     <meta name="author" content="OrangeAppleTW">
     
     
-    <link rel="next" href="../lesson_6/update.html" />
+    <link rel="next" href="../lesson_7/README.html" />
     
     
     <link rel="prev" href="../lesson_5/inspect_data.html" />
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="OrangeAppleTW/JavaScript-Advanced-textbook" data-level="6" data-basepath=".." data-revision="1461331486596">
+    <div class="book" data-github="OrangeAppleTW/JavaScript-Advanced-textbook" data-level="6" data-basepath=".." data-revision="1461946524000">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -386,26 +386,35 @@
         <li class="chapter " data-level="6" data-path="lesson_6/README.html">
             
             <a href="../lesson_6/README.html">
-                <i class="fa fa-check"></i> <b>6.</b> 更新 &amp; 刪除
+                <i class="fa fa-check"></i> <b>6.</b> 更新學生資料
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="lesson_7/README.html">
+            
+            <a href="../lesson_7/README.html">
+                <i class="fa fa-check"></i> <b>7.</b> 刪除單筆、查詢多筆資料
             </a>
             
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1" data-path="lesson_6/update.html">
+        <li class="chapter " data-level="7.1" data-path="lesson_7/delete_data.html">
             
-            <a href="../lesson_6/update.html">
-                <i class="fa fa-check"></i> <b>6.1.</b> 更新學生資料
+            <a href="../lesson_7/delete_data.html">
+                <i class="fa fa-check"></i> <b>7.1.</b> 刪除學生資料
             </a>
             
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="lesson_6/delete_data.html">
+        <li class="chapter " data-level="7.2" data-path="lesson_7/search_data.html">
             
-            <a href="../lesson_6/delete_data.html">
-                <i class="fa fa-check"></i> <b>6.2.</b> 刪除學生資料
+            <a href="../lesson_7/search_data.html">
+                <i class="fa fa-check"></i> <b>7.2.</b> 查詢多筆學生資料
             </a>
             
             
@@ -413,15 +422,6 @@
     
 
             </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="7" data-path="lesson_7/README.html">
-            
-            <a href="../lesson_7/README.html">
-                <i class="fa fa-check"></i> <b>7.</b> 查詢、更新、刪除多筆資料
-            </a>
-            
             
         </li>
     
@@ -522,13 +522,13 @@
     
         <a href="../lesson_5/inspect_data.html" title="檢視學生資料" class="chapter done " data-progress="5.2" style="left: 77.41935483870968%;"></a>
     
-        <a href="../lesson_6/README.html" title="更新 &amp; 刪除" class="chapter done new-chapter" data-progress="6" style="left: 80.64516129032258%;"></a>
+        <a href="../lesson_6/README.html" title="更新學生資料" class="chapter done new-chapter" data-progress="6" style="left: 80.64516129032258%;"></a>
     
-        <a href="../lesson_6/update.html" title="更新學生資料" class="chapter  " data-progress="6.1" style="left: 83.87096774193549%;"></a>
+        <a href="../lesson_7/README.html" title="刪除單筆、查詢多筆資料" class="chapter  new-chapter" data-progress="7" style="left: 83.87096774193549%;"></a>
     
-        <a href="../lesson_6/delete_data.html" title="刪除學生資料" class="chapter  " data-progress="6.2" style="left: 87.09677419354838%;"></a>
+        <a href="../lesson_7/delete_data.html" title="刪除學生資料" class="chapter  " data-progress="7.1" style="left: 87.09677419354838%;"></a>
     
-        <a href="../lesson_7/README.html" title="查詢、更新、刪除多筆資料" class="chapter  new-chapter" data-progress="7" style="left: 90.3225806451613%;"></a>
+        <a href="../lesson_7/search_data.html" title="查詢多筆學生資料" class="chapter  " data-progress="7.2" style="left: 90.3225806451613%;"></a>
     
         <a href="../lesson_8/README.html" title="特別的搜尋方法" class="chapter  new-chapter" data-progress="8" style="left: 93.54838709677419%;"></a>
     
@@ -541,9 +541,29 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_674">
+                    <section class="normal" id="section-gitbook_523">
                     
-                        <h1 id="-">更新 &amp; 刪除</h1>
+                        <h1 id="-">更新學生資料</h1>
+<p>來認識一下 Forerunner 的更新資料函式：
+當我們要更新某筆資料，只要使用 <code>updateById</code> 函式，將資料的 <code>id</code> 以及 <code>內容</code> 傳入函式，即可更新資料。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 新的資料</span>
+<span class="hljs-keyword">var</span> newData = {
+    name: <span class="hljs-string">"Apple"</span>,
+    grade: <span class="hljs-number">6</span>
+};
+
+<span class="hljs-comment">// 對 id 為 1 的學生進行資料修改</span>
+DB.collection(<span class="hljs-string">"students"</span>).updateById(<span class="hljs-string">"1"</span>,newData);
+</code></pre>
+<p>廢話不多說，讓我們來實作資料更新的功能吧！</p>
+<h3 id="-">功能敘述：</h3>
+<ul>
+<li>當點下其中一名學生的編輯按鈕時，跳出修改學生 Modal</li>
+<li>Modal中有一個表格，填有該名學生的資料</li>
+<li>使用者在修改資料以後，點選「送出」按鈕，便會照剛剛的資料進行修改</li>
+</ul>
+<p><img src="img/feature-buttons.png" alt="範例">
+<img src="img/edit-modal.png" alt="範例"></p>
 
                     
                     </section>
@@ -556,7 +576,7 @@
         <a href="../lesson_5/inspect_data.html" class="navigation navigation-prev " aria-label="Previous page: 檢視學生資料"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../lesson_6/update.html" class="navigation navigation-next " aria-label="Next page: 更新學生資料"><i class="fa fa-angle-right"></i></a>
+        <a href="../lesson_7/README.html" class="navigation navigation-next " aria-label="Next page: 刪除單筆、查詢多筆資料"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
