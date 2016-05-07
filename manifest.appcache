@@ -1,9 +1,9 @@
 CACHE MANIFEST
-# Revision 1462588184802
+# Revision 1462588631598
 
 CACHE:
-lesson_3/dropdown_menu.html
 lesson_3/README.html
+lesson_3/dropdown_menu.html
 lesson_3/modal.html
 lesson_3/rwd.html
 lesson_1/&.html
@@ -22,13 +22,15 @@ lesson_2/navbar.html
 index.html
 lesson_4/README.html
 lesson_4/crud_-_create.html
-lesson_4/forerunnerdb.html
 lesson_4/crud_-_read.html
+lesson_4/forerunnerdb.html
 lesson_5/README.html
 lesson_5/inspect_data.html
 lesson_5/table.html
 lesson_6/README.html
 lesson_7/README.html
+lesson_8/README.html
+lesson_9/README.html
 gitbook/app.js
 gitbook/fonts/fontawesome/FontAwesome.otf
 gitbook/fonts/fontawesome/fontawesome-webfont.eot
