@@ -27,6 +27,6 @@
 * [刪除單筆、查詢多筆資料](lesson_6/README.md)
 * [更新學生資料](lesson_7/README.md)
 * [操作多筆資料 (依照範圍)](lesson_8/README.md)
-* [操作多筆資料 (依照其他條件)](lesson_9/README.md)
+* [操作多筆資料 (包含)](lesson_9/README.md)
 * [API & AJAX](lesson_10/README.md)
 
