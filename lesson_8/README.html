@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>自動產生假資料 | 歡迎來到 JavaScript 軟體實戰班！</title>
+        <title>操作多筆資料 (依照範圍) | 歡迎來到 JavaScript 軟體實戰班！</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="OrangeAppleTW">
     
     
-    <link rel="next" href="../lesson_5/README.html" />
+    <link rel="next" href="../lesson_9/README.html" />
     
     
-    <link rel="prev" href="../lesson_4/crud_-_create.html" />
+    <link rel="prev" href="../lesson_7/README.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="OrangeAppleTW/JavaScript-Advanced-textbook" data-level="4.3" data-basepath=".." data-revision="1463818945812">
+    <div class="book" data-github="OrangeAppleTW/JavaScript-Advanced-textbook" data-level="8" data-basepath=".." data-revision="1463818945812">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook/edit/master/lesson_4/crud_-_read.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook/edit/master/lesson_8/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -444,7 +444,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 72.41379310344827%;min-width: 68.96551724137932%;"></div>
+        <div class="inner" style="width: 93.10344827586206%;min-width: 89.65517241379311%;"></div>
     </div>
     <div class="chapters">
     
@@ -492,17 +492,17 @@
     
         <a href="../lesson_4/crud_-_read.html" title="自動產生假資料" class="chapter done " data-progress="4.3" style="left: 72.41379310344827%;"></a>
     
-        <a href="../lesson_5/README.html" title="資料的呈現" class="chapter  new-chapter" data-progress="5" style="left: 75.86206896551724%;"></a>
+        <a href="../lesson_5/README.html" title="資料的呈現" class="chapter done new-chapter" data-progress="5" style="left: 75.86206896551724%;"></a>
     
-        <a href="../lesson_5/table.html" title="用表格來表示資料吧" class="chapter  " data-progress="5.1" style="left: 79.3103448275862%;"></a>
+        <a href="../lesson_5/table.html" title="用表格來表示資料吧" class="chapter done " data-progress="5.1" style="left: 79.3103448275862%;"></a>
     
-        <a href="../lesson_5/inspect_data.html" title="檢視學生資料" class="chapter  " data-progress="5.2" style="left: 82.75862068965517%;"></a>
+        <a href="../lesson_5/inspect_data.html" title="檢視學生資料" class="chapter done " data-progress="5.2" style="left: 82.75862068965517%;"></a>
     
-        <a href="../lesson_6/README.html" title="刪除單筆、查詢多筆資料" class="chapter  new-chapter" data-progress="6" style="left: 86.20689655172414%;"></a>
+        <a href="../lesson_6/README.html" title="刪除單筆、查詢多筆資料" class="chapter done new-chapter" data-progress="6" style="left: 86.20689655172414%;"></a>
     
-        <a href="../lesson_7/README.html" title="更新學生資料" class="chapter  new-chapter" data-progress="7" style="left: 89.65517241379311%;"></a>
+        <a href="../lesson_7/README.html" title="更新學生資料" class="chapter done new-chapter" data-progress="7" style="left: 89.65517241379311%;"></a>
     
-        <a href="../lesson_8/README.html" title="操作多筆資料 (依照範圍)" class="chapter  new-chapter" data-progress="8" style="left: 93.10344827586206%;"></a>
+        <a href="../lesson_8/README.html" title="操作多筆資料 (依照範圍)" class="chapter done new-chapter" data-progress="8" style="left: 93.10344827586206%;"></a>
     
         <a href="../lesson_9/README.html" title="操作多筆資料 (包含)" class="chapter  new-chapter" data-progress="9" style="left: 96.55172413793103%;"></a>
     
@@ -513,14 +513,57 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_27">
+                    <section class="normal" id="section-gitbook_34">
                     
-                        <h1 id="-">挑戰時間 - 自動產生假資料</h1>
-<p>現在試著寫一小段程式碼，自動產出一堆假資料，塞進 studentCollection 裡吧！</p>
+                        <h1 id="-">操作多筆資料(依照範圍)</h1>
+<p>我們在之前都是依照特定 id 去操作資料，但是資料庫的功能可不只有這麼簡單，我們現在就要來學如何對 id 以外的資料做不同的搜尋。</p>
+<h3 id="-">等於</h3>
+<p>還記得我們是如何找到特定 id 的資料的嗎？用一樣的方法也能用不同的條件找資料哦！</p>
+<pre><code class="lang-javascript">collection.find({
+    score: <span class="hljs-number">88</span>
+});
+</code></pre>
+<p>--</p>
+<h3 id="-gt-gte-">大於 (<code>$gt</code>) &amp; 大於等於 (<code>$gte</code>)</h3>
+<pre><code class="lang-javascript">result = students.find({
+    score: {
+        $gt: <span class="hljs-number">60</span>
+    }
+});
+</code></pre>
 <blockquote>
-<h3 id="-">小提示：</h3>
-<p>可以使用 loop 來重複執行</p>
+<h3 id="-">想想看</h3>
+<p>gt 是哪兩個英文字的縮寫呢？
+gte 是哪三個英文字的縮寫呢？</p>
 </blockquote>
+<p>--</p>
+<h3 id="-lt-lte-">小於 (<code>$lt</code>) &amp; 小於等於 (<code>$lte</code>)</h3>
+<p>「猜」看看 <strong><em>小於</em></strong> 的寫法是如何呢？(偷偷參考一下大於的做法吧)</p>
+<blockquote>
+<h3 id="-">想想看</h3>
+<p>lt 是哪兩個英文字的縮寫呢？
+lte 是哪三個英文字的縮寫呢？</p>
+</blockquote>
+<p>--</p>
+<h3 id="-ne-">不等於 (<code>$ne</code>)</h3>
+<p>「猜」看看 <strong><em>不等於</em></strong> 的寫法是如何呢？(偷偷參考一下大於的做法吧)</p>
+<p>--</p>
+<h3 id="-">多個條件</h3>
+<pre><code class="lang-javascript">itemCollection.find({
+    price: {
+        <span class="hljs-string">"$gt"</span>: <span class="hljs-number">90</span>,
+        <span class="hljs-string">"$lt"</span>: <span class="hljs-number">150</span>
+    }
+});
+</code></pre>
+<p><br></p>
+<h2 id="-">實作時間</h2>
+<p>在頁面上增加一個「年齡大於」欄位及「搜尋」按鈕，
+當點下「搜尋」時會只顯示年齡大於欄位中數字的學生資料。</p>
+<h3 id="-">進階挑戰</h3>
+<ul>
+<li>增加「年齡小於」欄位，當欄位不為空時，會一併對此條件做搜尋。</li>
+</ul>
 
                     
                     </section>
@@ -530,10 +573,10 @@
         </div>
 
         
-        <a href="../lesson_4/crud_-_create.html" class="navigation navigation-prev " aria-label="Previous page: CRUD - 資料庫的基本操作"><i class="fa fa-angle-left"></i></a>
+        <a href="../lesson_7/README.html" class="navigation navigation-prev " aria-label="Previous page: 更新學生資料"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../lesson_5/README.html" class="navigation navigation-next " aria-label="Next page: 資料的呈現"><i class="fa fa-angle-right"></i></a>
+        <a href="../lesson_9/README.html" class="navigation navigation-next " aria-label="Next page: 操作多筆資料 (包含)"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

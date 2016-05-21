@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>自動產生假資料 | 歡迎來到 JavaScript 軟體實戰班！</title>
+        <title>更新學生資料 | 歡迎來到 JavaScript 軟體實戰班！</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="OrangeAppleTW">
     
     
-    <link rel="next" href="../lesson_5/README.html" />
+    <link rel="next" href="../lesson_8/README.html" />
     
     
-    <link rel="prev" href="../lesson_4/crud_-_create.html" />
+    <link rel="prev" href="../lesson_6/README.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="OrangeAppleTW/JavaScript-Advanced-textbook" data-level="4.3" data-basepath=".." data-revision="1463818945812">
+    <div class="book" data-github="OrangeAppleTW/JavaScript-Advanced-textbook" data-level="7" data-basepath=".." data-revision="1463818945812">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook/edit/master/lesson_4/crud_-_read.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook/edit/master/lesson_7/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -444,7 +444,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 72.41379310344827%;min-width: 68.96551724137932%;"></div>
+        <div class="inner" style="width: 89.65517241379311%;min-width: 86.20689655172414%;"></div>
     </div>
     <div class="chapters">
     
@@ -492,15 +492,15 @@
     
         <a href="../lesson_4/crud_-_read.html" title="自動產生假資料" class="chapter done " data-progress="4.3" style="left: 72.41379310344827%;"></a>
     
-        <a href="../lesson_5/README.html" title="資料的呈現" class="chapter  new-chapter" data-progress="5" style="left: 75.86206896551724%;"></a>
+        <a href="../lesson_5/README.html" title="資料的呈現" class="chapter done new-chapter" data-progress="5" style="left: 75.86206896551724%;"></a>
     
-        <a href="../lesson_5/table.html" title="用表格來表示資料吧" class="chapter  " data-progress="5.1" style="left: 79.3103448275862%;"></a>
+        <a href="../lesson_5/table.html" title="用表格來表示資料吧" class="chapter done " data-progress="5.1" style="left: 79.3103448275862%;"></a>
     
-        <a href="../lesson_5/inspect_data.html" title="檢視學生資料" class="chapter  " data-progress="5.2" style="left: 82.75862068965517%;"></a>
+        <a href="../lesson_5/inspect_data.html" title="檢視學生資料" class="chapter done " data-progress="5.2" style="left: 82.75862068965517%;"></a>
     
-        <a href="../lesson_6/README.html" title="刪除單筆、查詢多筆資料" class="chapter  new-chapter" data-progress="6" style="left: 86.20689655172414%;"></a>
+        <a href="../lesson_6/README.html" title="刪除單筆、查詢多筆資料" class="chapter done new-chapter" data-progress="6" style="left: 86.20689655172414%;"></a>
     
-        <a href="../lesson_7/README.html" title="更新學生資料" class="chapter  new-chapter" data-progress="7" style="left: 89.65517241379311%;"></a>
+        <a href="../lesson_7/README.html" title="更新學生資料" class="chapter done new-chapter" data-progress="7" style="left: 89.65517241379311%;"></a>
     
         <a href="../lesson_8/README.html" title="操作多筆資料 (依照範圍)" class="chapter  new-chapter" data-progress="8" style="left: 93.10344827586206%;"></a>
     
@@ -513,14 +513,29 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_27">
+                    <section class="normal" id="section-gitbook_33">
                     
-                        <h1 id="-">挑戰時間 - 自動產生假資料</h1>
-<p>現在試著寫一小段程式碼，自動產出一堆假資料，塞進 studentCollection 裡吧！</p>
-<blockquote>
-<h3 id="-">小提示：</h3>
-<p>可以使用 loop 來重複執行</p>
-</blockquote>
+                        <h1 id="-">更新學生資料</h1>
+<p>來認識一下 Forerunner 的更新資料函式：
+當我們要更新某筆資料，只要使用 <code>updateById</code> 函式，將資料的 <code>id</code> 以及 <code>內容</code> 傳入函式，即可更新資料。</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// 新的資料</span>
+<span class="hljs-keyword">var</span> newData = {
+    name: <span class="hljs-string">"Apple"</span>,
+    grade: <span class="hljs-number">6</span>
+};
+
+<span class="hljs-comment">// 對 id 為 1 的學生進行資料修改</span>
+DB.collection(<span class="hljs-string">"students"</span>).updateById(<span class="hljs-string">"1"</span>,newData);
+</code></pre>
+<p>廢話不多說，讓我們來實作資料更新的功能吧！</p>
+<h3 id="-">功能敘述：</h3>
+<ul>
+<li>當點下其中一名學生的編輯按鈕時，跳出修改學生 Modal</li>
+<li>Modal中有一個表格，填有該名學生的資料</li>
+<li>使用者在修改資料以後，點選「送出」按鈕，便會照剛剛的資料進行修改</li>
+</ul>
+<p><img src="img/feature-buttons.png" alt="範例">
+<img src="img/edit-modal.png" alt="範例"></p>
 
                     
                     </section>
@@ -530,10 +545,10 @@
         </div>
 
         
-        <a href="../lesson_4/crud_-_create.html" class="navigation navigation-prev " aria-label="Previous page: CRUD - 資料庫的基本操作"><i class="fa fa-angle-left"></i></a>
+        <a href="../lesson_6/README.html" class="navigation navigation-prev " aria-label="Previous page: 刪除單筆、查詢多筆資料"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../lesson_5/README.html" class="navigation navigation-next " aria-label="Next page: 資料的呈現"><i class="fa fa-angle-right"></i></a>
+        <a href="../lesson_8/README.html" class="navigation navigation-next " aria-label="Next page: 操作多筆資料 (依照範圍)"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
