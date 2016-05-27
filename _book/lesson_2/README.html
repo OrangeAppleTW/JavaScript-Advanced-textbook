@@ -1,0 +1,599 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>認識介面 (UI, User Interface) | 歡迎來到 JavaScript 軟體實戰班！</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="OrangeAppleTW">
+    
+    
+    <link rel="next" href="../lesson_2/framework.html" />
+    
+    
+    <link rel="prev" href="../lesson_1/create_project_page_on_github.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="OrangeAppleTW/JavaScript-Advanced-textbook" data-level="2" data-basepath=".." data-revision="1464365957657">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >歡迎來到 JavaScript 軟體實戰班！</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/OrangeAppleTW" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/OrangeAppleTW/JavaScript-Advanced-textbook/edit/master/lesson_2/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        <li data-level="0" data-path="index.html">
+            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+    
+        <li class="chapter " data-level="1" data-path="lesson_1/README.html">
+            
+            <a href="../lesson_1/README.html">
+                <i class="fa fa-check"></i> <b>1.</b> 個人網站
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="lesson_1/before_we_start.html">
+            
+            <a href="../lesson_1/before_we_start.html">
+                <i class="fa fa-check"></i> <b>1.1.</b> 前置作業
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="lesson_1/personal_webpage.html">
+            
+            <a href="../lesson_1/personal_webpage.html">
+                <i class="fa fa-check"></i> <b>1.2.</b> 個人網頁
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="lesson_1/custom_style.html">
+            
+            <a href="../lesson_1/custom_style.html">
+                <i class="fa fa-check"></i> <b>1.3.</b> 自訂外觀
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="lesson_1/include_images.html">
+            
+            <a href="../lesson_1/include_images.html">
+                <i class="fa fa-check"></i> <b>1.4.</b> 嵌入圖片
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="lesson_1/appendix.html">
+            
+            <a href="../lesson_1/appendix.html">
+                <i class="fa fa-check"></i> <b>1.5.</b> 附錄 - 如何創造專案網頁
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="lesson_1/&amp;.html">
+            
+            <a href="../lesson_1/&amp;.html">
+                <i class="fa fa-check"></i> <b>1.5.1.</b> 絕對路徑 &amp; 相對路徑
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="lesson_1/create_project_page_on_github.html">
+            
+            <a href="../lesson_1/create_project_page_on_github.html">
+                <i class="fa fa-check"></i> <b>1.5.2.</b> create project page on github
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="lesson_2/README.html">
+            
+            <a href="../lesson_2/README.html">
+                <i class="fa fa-check"></i> <b>2.</b> 認識介面 (UI, User Interface)
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="lesson_2/framework.html">
+            
+            <a href="../lesson_2/framework.html">
+                <i class="fa fa-check"></i> <b>2.1.</b> Framework
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="lesson_2/bootstrap.html">
+            
+            <a href="../lesson_2/bootstrap.html">
+                <i class="fa fa-check"></i> <b>2.2.</b> Bootstrap Grid System
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="lesson_2/navbar.html">
+            
+            <a href="../lesson_2/navbar.html">
+                <i class="fa fa-check"></i> <b>2.3.</b> Navbar
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="lesson_2/favicon.html">
+            
+            <a href="../lesson_2/favicon.html">
+                <i class="fa fa-check"></i> <b>2.4.</b> 為你的網站加上 favicon
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="lesson_3/README.html">
+            
+            <a href="../lesson_3/README.html">
+                <i class="fa fa-check"></i> <b>3.</b> UI Components
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="lesson_3/dropdown_menu.html">
+            
+            <a href="../lesson_3/dropdown_menu.html">
+                <i class="fa fa-check"></i> <b>3.1.</b> Dropdown Menu
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="lesson_3/modal.html">
+            
+            <a href="../lesson_3/modal.html">
+                <i class="fa fa-check"></i> <b>3.2.</b> Modal
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="lesson_3/rwd.html">
+            
+            <a href="../lesson_3/rwd.html">
+                <i class="fa fa-check"></i> <b>3.3.</b> RWD 自適應網頁設計
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="lesson_4/README.html">
+            
+            <a href="../lesson_4/README.html">
+                <i class="fa fa-check"></i> <b>4.</b> 認識資料庫 Database - part 1
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="lesson_4/forerunnerdb.html">
+            
+            <a href="../lesson_4/forerunnerdb.html">
+                <i class="fa fa-check"></i> <b>4.1.</b> 認識 ForerunnerDB
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="lesson_4/crud_-_create.html">
+            
+            <a href="../lesson_4/crud_-_create.html">
+                <i class="fa fa-check"></i> <b>4.2.</b> CRUD - 資料庫的基本操作
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="lesson_4/crud_-_read.html">
+            
+            <a href="../lesson_4/crud_-_read.html">
+                <i class="fa fa-check"></i> <b>4.3.</b> 自動產生假資料
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="lesson_5/README.html">
+            
+            <a href="../lesson_5/README.html">
+                <i class="fa fa-check"></i> <b>5.</b> 資料的呈現
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="lesson_5/table.html">
+            
+            <a href="../lesson_5/table.html">
+                <i class="fa fa-check"></i> <b>5.1.</b> 用表格來表示資料吧
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="lesson_5/inspect_data.html">
+            
+            <a href="../lesson_5/inspect_data.html">
+                <i class="fa fa-check"></i> <b>5.2.</b> 檢視學生資料
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="lesson_6/README.html">
+            
+            <a href="../lesson_6/README.html">
+                <i class="fa fa-check"></i> <b>6.</b> 刪除單筆、查詢多筆資料
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="lesson_7/README.html">
+            
+            <a href="../lesson_7/README.html">
+                <i class="fa fa-check"></i> <b>7.</b> 更新學生資料
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="lesson_8/README.html">
+            
+            <a href="../lesson_8/README.html">
+                <i class="fa fa-check"></i> <b>8.</b> 操作多筆資料 (依照範圍)
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="lesson_9/README.html">
+            
+            <a href="../lesson_9/README.html">
+                <i class="fa fa-check"></i> <b>9.</b> 操作多筆資料 (包含)
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="lesson_10/README.html">
+            
+            <a href="../lesson_10/README.html">
+                <i class="fa fa-check"></i> <b>10.</b> 多個資料表的延伸應用
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="input_&amp;_value/README.html">
+            
+            <a href="../input_&amp;_value/README.html">
+                <i class="fa fa-check"></i> <b>11.</b> 表單介面及讀取
+            </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="input_&amp;_value/text_field.html">
+            
+            <a href="../input_&amp;_value/text_field.html">
+                <i class="fa fa-check"></i> <b>11.1.</b> 文字欄位 Text field
+            </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="input_&amp;_value/checkbox.html">
+            
+            <a href="../input_&amp;_value/checkbox.html">
+                <i class="fa fa-check"></i> <b>11.2.</b> 勾選方塊 Checkbox
+            </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 28.125%;min-width: 25%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../lesson_1/README.html" title="個人網站" class="chapter done new-chapter" data-progress="1" style="left: 3.125%;"></a>
+    
+        <a href="../lesson_1/before_we_start.html" title="前置作業" class="chapter done " data-progress="1.1" style="left: 6.25%;"></a>
+    
+        <a href="../lesson_1/personal_webpage.html" title="個人網頁" class="chapter done " data-progress="1.2" style="left: 9.375%;"></a>
+    
+        <a href="../lesson_1/custom_style.html" title="自訂外觀" class="chapter done " data-progress="1.3" style="left: 12.5%;"></a>
+    
+        <a href="../lesson_1/include_images.html" title="嵌入圖片" class="chapter done " data-progress="1.4" style="left: 15.625%;"></a>
+    
+        <a href="../lesson_1/appendix.html" title="附錄 - 如何創造專案網頁" class="chapter done " data-progress="1.5" style="left: 18.75%;"></a>
+    
+        <a href="../lesson_1/&amp;.html" title="絕對路徑 &amp; 相對路徑" class="chapter done " data-progress="1.5.1" style="left: 21.875%;"></a>
+    
+        <a href="../lesson_1/create_project_page_on_github.html" title="create project page on github" class="chapter done " data-progress="1.5.2" style="left: 25%;"></a>
+    
+        <a href="../lesson_2/README.html" title="認識介面 (UI, User Interface)" class="chapter done new-chapter" data-progress="2" style="left: 28.125%;"></a>
+    
+        <a href="../lesson_2/framework.html" title="Framework" class="chapter  " data-progress="2.1" style="left: 31.25%;"></a>
+    
+        <a href="../lesson_2/bootstrap.html" title="Bootstrap Grid System" class="chapter  " data-progress="2.2" style="left: 34.375%;"></a>
+    
+        <a href="../lesson_2/navbar.html" title="Navbar" class="chapter  " data-progress="2.3" style="left: 37.5%;"></a>
+    
+        <a href="../lesson_2/favicon.html" title="為你的網站加上 favicon" class="chapter  " data-progress="2.4" style="left: 40.625%;"></a>
+    
+        <a href="../lesson_3/README.html" title="UI Components" class="chapter  new-chapter" data-progress="3" style="left: 43.75%;"></a>
+    
+        <a href="../lesson_3/dropdown_menu.html" title="Dropdown Menu" class="chapter  " data-progress="3.1" style="left: 46.875%;"></a>
+    
+        <a href="../lesson_3/modal.html" title="Modal" class="chapter  " data-progress="3.2" style="left: 50%;"></a>
+    
+        <a href="../lesson_3/rwd.html" title="RWD 自適應網頁設計" class="chapter  " data-progress="3.3" style="left: 53.125%;"></a>
+    
+        <a href="../lesson_4/README.html" title="認識資料庫 Database - part 1" class="chapter  new-chapter" data-progress="4" style="left: 56.25%;"></a>
+    
+        <a href="../lesson_4/forerunnerdb.html" title="認識 ForerunnerDB" class="chapter  " data-progress="4.1" style="left: 59.375%;"></a>
+    
+        <a href="../lesson_4/crud_-_create.html" title="CRUD - 資料庫的基本操作" class="chapter  " data-progress="4.2" style="left: 62.5%;"></a>
+    
+        <a href="../lesson_4/crud_-_read.html" title="自動產生假資料" class="chapter  " data-progress="4.3" style="left: 65.625%;"></a>
+    
+        <a href="../lesson_5/README.html" title="資料的呈現" class="chapter  new-chapter" data-progress="5" style="left: 68.75%;"></a>
+    
+        <a href="../lesson_5/table.html" title="用表格來表示資料吧" class="chapter  " data-progress="5.1" style="left: 71.875%;"></a>
+    
+        <a href="../lesson_5/inspect_data.html" title="檢視學生資料" class="chapter  " data-progress="5.2" style="left: 75%;"></a>
+    
+        <a href="../lesson_6/README.html" title="刪除單筆、查詢多筆資料" class="chapter  new-chapter" data-progress="6" style="left: 78.125%;"></a>
+    
+        <a href="../lesson_7/README.html" title="更新學生資料" class="chapter  new-chapter" data-progress="7" style="left: 81.25%;"></a>
+    
+        <a href="../lesson_8/README.html" title="操作多筆資料 (依照範圍)" class="chapter  new-chapter" data-progress="8" style="left: 84.375%;"></a>
+    
+        <a href="../lesson_9/README.html" title="操作多筆資料 (包含)" class="chapter  new-chapter" data-progress="9" style="left: 87.5%;"></a>
+    
+        <a href="../lesson_10/README.html" title="多個資料表的延伸應用" class="chapter  " data-progress="10" style="left: 90.625%;"></a>
+    
+        <a href="../input_&amp;_value/README.html" title="表單介面及讀取" class="chapter  " data-progress="11" style="left: 93.75%;"></a>
+    
+        <a href="../input_&amp;_value/text_field.html" title="文字欄位 Text field" class="chapter  " data-progress="11.1" style="left: 96.875%;"></a>
+    
+        <a href="../input_&amp;_value/checkbox.html" title="勾選方塊 Checkbox" class="chapter  " data-progress="11.2" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_218">
+                    
+                        <h1 id="-">認識介面</h1>
+<p>UI 就是 User Interface 的簡稱，中文就是『使用者介面』。
+顧名思義就是一個裝置/軟體/網站提供給使用者操作的介面。</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../lesson_1/create_project_page_on_github.html" class="navigation navigation-prev " aria-label="Previous page: create project page on github"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../lesson_2/framework.html" class="navigation navigation-next " aria-label="Next page: Framework"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
