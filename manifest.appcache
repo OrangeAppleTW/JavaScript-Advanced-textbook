@@ -1,12 +1,10 @@
 CACHE MANIFEST
-# Revision 1463818945813
+# Revision 1464366532748
 
 CACHE:
-lesson_2/README.html
-lesson_2/bootstrap.html
-lesson_2/favicon.html
-lesson_2/framework.html
-lesson_2/navbar.html
+input_&_value/README.html
+input_&_value/checkbox.html
+input_&_value/text_field.html
 lesson_1/&.html
 lesson_1/README.html
 lesson_1/appendix.html
@@ -17,6 +15,11 @@ lesson_1/include_images.html
 lesson_1/personal_webpage.html
 lesson_10/README.html
 index.html
+lesson_2/README.html
+lesson_2/bootstrap.html
+lesson_2/favicon.html
+lesson_2/framework.html
+lesson_2/navbar.html
 lesson_3/README.html
 lesson_3/dropdown_menu.html
 lesson_3/modal.html
