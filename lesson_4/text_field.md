@@ -22,7 +22,14 @@ $(selector).val("OrangeApple");
 <br>
 
 ## 實作時間
-在你的網頁中加入兩個欄位「名字」及「年齡」，以及一個按鈕，
+在你的網頁中加入兩個欄位「名字」及「年齡」，以及一個按鈕：
+
+名字：<input type="text" /><br>
+年齡：<input type="text" />
+<button>Hello</button>
+
+--
+
 當按下按鈕時，網頁會跳出以下訊息：
 ```
 Hello, _____ 歲的 _______ 你好 ~

@@ -1,27 +1,50 @@
-# 認識資料庫 Database - part 1
+# 表單介面及資料的讀取
 
-## 什麼是資料庫 (Database)？
-資料庫是一個照特定格式，一筆一筆儲存各種資料的軟體。
-經常使用在企業、學校、銀行、政府等機構。
+## 如何建立表單？
 
-> ###想想看
-> 學校在什麼情況下會用到資料庫呢？
+我們常在網頁中看見輸入的欄位，也是一種 HTML 標籤喔，他叫做 `<input />`
+而我們在使用這個標籤時，有兩個很重要的特徵(attributes)需要搞懂。
 
-## 資料表 (Tables)
-但是，一個資料庫中儲存的資料有很多，每筆資料的類型都不同，比較不適合全部放在一起。
-舉例來說，一個製造玩具的公司，擁有很多「員工」以及「玩具」的資料，就會分別把兩種資料分別放在不同的資料表裡。
+### type
+input 標籤有非常多不同的類型(type)，常見的有 `text`(文字欄位)、`checkbox`(勾選方塊)。
 
-我們用 Google 表單來模擬一下：學校是如何用資料庫來紀錄學生以及家長資料的。
-[資料表連結](https://docs.google.com/spreadsheets/d/1ITPMl-C4This8BBk1fOiUQ_ktgnyM6dEZYpnwRMoUdg/edit#gid=0)
+例如：
 
-## 試試看
-如果你是學校的 IT 人員，你會如何設計資料庫的結構，
-為每個學生儲存多次考試的成績？
+我是文字輸入欄位：<input type="text" />
+<input type="checkbox" /> 我是勾選方塊
 
----
 
->### 補充資料 - 資料的關聯
-你可能已經注意到了，資料表中的每一筆資料，都有獨一無二的 id，用來辨識這筆資料的身分，這就叫做 primary key。
-而另一個資料表如果想要與另一個資料表的資料產生關係，就要用一個欄位記錄跟他有關的這筆資料的 id，而這個欄位就叫做 foreign id。(可以再仔細觀察一下剛剛的範例資料表)
+以下是 HTML:
 
-![](img/pkey-and-fkey.png)
+```html
+我是文字輸入欄位：<input type="text" />
+<input type="checkbox" /> 我是勾選方塊
+```
+
+--
+
+有興趣的同學可以在這個網頁看到不同的 type： http://www.w3schools.com/html/html_form_input_types.asp
+
+
+### value
+
+可以說是 input 標籤最重要的一個特徵，顧名思義，就是「值」的意思。
+我們會在接下來的範例中展示他的用法給大家看。
+
+
+
+##文字輸入欄位
+請在 JSBin 的中輸入以下 HTML 程式碼，看看發生了什麼事：
+
+```html
+Name: <input type=”text” value=”Orange” />
+```
+
+
+
+
+
+
+
+
+

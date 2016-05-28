@@ -34,7 +34,7 @@ checkbox 比較特別，每個 checkbox 其實都代表了一個值，
 </script>
 
 ```html
-<input id="one-checkbox" type="checkbox" /> 我是勾選方塊
+<input id="one-checkbox" type="checkbox" value="好學生"/> 我是好學生
 <button id="button">點下了嗎？</button>
 
 <script>
@@ -49,7 +49,22 @@ checkbox 比較特別，每個 checkbox 其實都代表了一個值，
 ```
 
 ##實作時間
-在剛剛創造的網頁中加入「喜歡的水果」欄位，用 checkbox 加入3個選項：橘子、蘋果、香蕉、芭樂。
+在剛剛創造的網頁中加入「喜歡的水果」欄位，用 checkbox 加入4個選項：橘子、蘋果、香蕉、芭樂。
+
+
+名字：<input type="text" /><br>
+年齡：<input type="text" /><br>
+
+<input class="fruitOption" type="checkbox" value="橘子"> 橘子
+<input class="fruitOption" type="checkbox" value="蘋果"> 蘋果
+<input class="fruitOption" type="checkbox" value="香蕉"> 香蕉
+<input class="fruitOption" type="checkbox" value="芭樂"> 芭樂
+<br>
+
+<button>Hello</button>
+
+--
+
 當按下按鈕時會說出：
 ```
 Hello, ____歲的_______。原來你喜歡吃 `水果1`, `水果2`....
@@ -59,3 +74,6 @@ Hello, ____歲的_______。原來你喜歡吃 `水果1`, `水果2`....
 
 > ###小提示：
 請將所有要被檢查的勾選方塊都給定一個 id 或 class，並在點下按鈕後一一檢查是否被勾選。
+
+### 挑戰題
+當跳出訊息之後，除了原本在欄位中的內容要被清空之外，也要將勾選方塊回復為 “未勾選” 的狀態。

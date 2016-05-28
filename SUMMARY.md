@@ -17,6 +17,9 @@
    * [Dropdown Menu](lesson_3/dropdown_menu.md)
    * [Modal](lesson_3/modal.md)
    * [RWD 自適應網頁設計](lesson_3/rwd.md)
+* [表單介面及讀取](lesson_3.5/README.md)
+   * [文字欄位 Text field](lesson_3.5/text_field.md)
+   * [勾選方塊 Checkbox](lesson_3.5/checkbox.md)
 * [認識資料庫 Database - part 1](lesson_4/README.md)
    * [認識 ForerunnerDB](lesson_4/forerunnerdb.md)
    * [CRUD - 資料庫的基本操作](lesson_4/crud_-_create.md)
@@ -29,7 +32,4 @@
 * [操作多筆資料 (依照範圍)](lesson_8/README.md)
 * [操作多筆資料 (包含)](lesson_9/README.md)
 * [多個資料表的延伸應用](lesson_10/README.md)
-* [表單介面及讀取](input_&_value/README.md)
-   * [文字欄位 Text field](input_&_value/text_field.md)
-   * [勾選方塊 Checkbox](input_&_value/checkbox.md)
 
